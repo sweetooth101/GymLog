@@ -26,7 +26,6 @@
         android:layout_marginTop="8dp"
         android:text="@string/exercise"
         android:textSize="24sp"
-        app:layout_constraintEnd_toBottomOf="@id/logDisplayTextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logDisplayTextView" />
 
@@ -84,14 +83,15 @@
         android:padding="8dp"
         app:layout_constraintBaseline_toBaselineOf="@+id/repLabelTextView"
         app:layout_constraintStart_toEndOf="@+id/repLabelTextView" />
+
     <Button
+        android:id="@+id/logButton"
         android:layout_width="390dp"
         android:layout_height="205dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/repInputEditText"
-        app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"
         android:text="@string/log"
-        android:textSize="36sp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/repInputEditText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
