@@ -9,7 +9,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.LiveData;
-;import com.example.gymlog.database.GymLogRepository;
+import com.example.gymlog.database.GymLogRepository;
 import com.example.gymlog.database.entities.User;
 import com.example.gymlog.databinding.ActivityLoginBinding;
 import com.example.gymlog.databinding.ActivityMainBinding;
@@ -54,7 +54,7 @@ public class LoginActivity extends AppCompatActivity {
                 if(password.equals(user.getPassword())){
                     startActivity(MainActivity.mainActivityIntentFactory(getApplicationContext(),user.getId()));
                 }else{
-                    toastMaker("Invald Password");
+                    toastMaker("Invalid Password");
                     binding.passwordLoginEditText.setSelection(0);
 
                 }
